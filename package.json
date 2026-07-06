@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "NG_Cypress_July",
   "main": "index.js",
+
   "scripts": {
-    "test": "npx cypress run",
+    "test:api": "npx cypress run --spec cypress/e2e/api/**/*.js",
+    "test:ui": "npx cypress run --spec cypress/e2e/ui/**/*.js",
+    "test:all": "npx cypress run --spec cypress/e2e/**/*.js",
     "open": "npx cypress open"
   },
   "repository": {

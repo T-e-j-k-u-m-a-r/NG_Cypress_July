@@ -1,0 +1,109 @@
+6th July -> TODO - COMPLETED
+------------------------------------------------------
+1. Create a git repo: NG_Cypress_July: DONE
+2. Clone repo: DONE
+3. Create a npm repo: DONE
+	
+	Command: 
+
+		npm init -y
+
+	Observations: 
+		Check out:  
+			package.json file is created	
+
+4. Install cypress, faker, ajv: DONE
+
+	Commands: 
+
+		npm install cypress@latest --save-dev
+		npm install @faker-js/faker --save-dev
+		npm install ajv --save-dev
+
+	Observations: 
+		Check out: 
+			node_modules folder is created
+			package.json is updated
+			package-lock.json is created
+
+	Note: 
+
+		1. Create .gitignore file and add node_modules folder to it. 
+		2. Commit the code changes with commit message: chore: initialize project with package.json and devDependencies for Cypress automation.
+
+
+5. Launch cypress: DONE
+	
+	Commmand: 
+		npx cypress open
+
+	Observations: 			
+		Checkout: 
+
+			cypress/fixtures/example.json is created
+			cypress/support/e2e.js is created
+			cypress/support/commands.js is created
+			cypress.config.js is created at the root folder
+
+	Note: 
+
+		1. Make necessary changes to cypress.config file
+		2. if neccessary update gitignore file
+		3. Update spec pattern in Cypress.config.js file for the folders and files to view in Cypress Test Runner
+
+			specPattern: "cypress/**/*.cy.{js,jsx,ts,tsx}"
+
+	Create cypress folder at the root repository and
+	
+	Create 2 folder
+		i. api/POST.spec.cy.js
+		ii. ui/LaunchApp.spec.cy.js
+	Run from 
+		i. Cypress test runner
+		ii. Command prompt
+
+	Once both are passed -> Commit the changes with commit message: 
+ 
+
+8. Close the laptop and sleep
+
+-------------------------------------------------------------------------------
+7th July -> TODO: 
+
+
+API: *******************************************************
+
+Write a code to perform 
+
+	a. CRUD operation for this API: https://gorest.co.in/rest-console
+	b. Perform schema validation for GET, POST, PUT method
+
+1. POST
+2. GET
+3. PUT
+4. DELETE
+	
+	c. Create CICD workflows using Github Actions for
+		i. workflow-dispatch
+		ii. pull request to main branch
+
+UI: *******************************************************
+
+0. Complete mastering locator stratergy
+
+	i. CSS 
+	ii. xpath
+
+1. Add all types of handles web elements
+2. Implement POM
+3. Create an e2e scenario using any website covering 5-7 flows in 1 test case
+3. Create CICD workflow for UI in GITHUB Actions for
+	i. workflow-dispatch
+	ii. pull request to main branch
+-------------------------------------------------------------------------------
+	
+
+
+
+
+
