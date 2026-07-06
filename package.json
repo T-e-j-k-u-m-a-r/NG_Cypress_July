@@ -1,0 +1,28 @@
+{
+  "name": "ng_cypress_july",
+  "version": "1.0.0",
+  "description": "NG_Cypress_July",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-e-j-k-u-m-a-r/NG_Cypress_July.git"
+  },
+  "keywords": [
+    "cypress-automation"
+  ],
+  "author": "Tejkumar G K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-e-j-k-u-m-a-r/NG_Cypress_July/issues"
+  },
+  "homepage": "https://github.com/T-e-j-k-u-m-a-r/NG_Cypress_July#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "ajv": "^8.20.0",
+    "cypress": "^15.18.0"
+  }
+}
