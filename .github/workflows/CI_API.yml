@@ -1,5 +1,5 @@
 
-name:  "Continous Integration for API scripts"
+name:  "CI - Automated Tests"
 
 on:
     pull_request: 
@@ -8,28 +8,36 @@ on:
 
 jobs:
     "Cypress-Automation": 
+
         runs-on: ubuntu-latest
         steps:
+            # Step1: Clone the repo into Ubuntu Virtual Machine
             - name: "Checkout Repository"
               uses: actions/checkout@v4
                   
+
+            # Step2: Setup node software
             - name: "Setup Node JS"
               uses: actions/setup-node@v4
               with:
                 node-version: '20'
-                cache: npm
+                cache: 'npm'
 
+            # Step3: Check node version
             - name: "Check node version"
               run: node --version
             
+            # Step4: Install npm packages
             - name: "Install all dependencies"
               run: npm ci
             
+            # Step5: Verify Cypress installed version along with browsers
             - name: "Check Cypress version"
               run: npx cypress --version
 
+            # Step6: Execute all the Cypress Scripts including both UI and API
             - name: "Run All Cypress Scripts"
-              run: npm run test
+              run: npm run test:all
               
 
 
