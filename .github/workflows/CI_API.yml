@@ -1,5 +1,5 @@
 
-name:  "Continous Integration for automated scripts"
+name:  "CI - Automated Tests"
 
 on:
     pull_request: 
@@ -8,6 +8,7 @@ on:
 
 jobs:
     "Cypress-Automation": 
+
         runs-on: ubuntu-latest
         steps:
             # Step1: Clone the repo into Ubuntu Virtual Machine
@@ -34,9 +35,9 @@ jobs:
             - name: "Check Cypress version"
               run: npx cypress --version
 
-            # Step6: Execute all Cypress Scripts
+            # Step6: Execute all the Cypress Scripts including both UI and API
             - name: "Run All Cypress Scripts"
-              run: npm run test
+              run: npm run test:all
               
 
 
