@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 
 const AJV = require(`ajv`);
 const ajv = new AJV({ allErrors: true });
