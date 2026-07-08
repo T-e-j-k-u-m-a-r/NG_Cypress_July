@@ -1,1 +1,42 @@
 
+name:  "Continous Integration for API scripts"
+
+on:
+    pull_request: 
+        branches: 
+            [ main ]
+
+jobs:
+    "Cypress-Automation": 
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Checkout Repository"
+              uses: actions/checkout@v4
+                  
+            - name: "Setup Node JS"
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20'
+                cache: npm
+
+
+            - name: "Check node version"
+              run: node --version
+            
+            - name: "Install all dependencies"
+              run: npm ci
+            
+            - name: "Check Cypress version"
+              run: npx cypress --version
+
+            - name: "Run All Cypress Scripts"
+              run: npm run test
+              
+
+
+        
+
+
+
+ 
+ 
