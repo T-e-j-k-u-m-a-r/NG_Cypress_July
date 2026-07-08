@@ -68,10 +68,12 @@
 8. Close the laptop and sleep
 
 -------------------------------------------------------------------------------
-7th July -> TODO: 
+8th & 9th July -> TODO: In Progress
 
 
-API: *******************************************************
+API: 
+
+*******************************************************
 
 Write a code to perform 
 
@@ -87,7 +89,9 @@ Write a code to perform
 		i. workflow-dispatch
 		ii. pull request to main branch
 
-UI: *******************************************************
+UI: 
+
+*******************************************************
 
 0. Complete mastering locator stratergy
 
@@ -95,11 +99,18 @@ UI: *******************************************************
 	ii. xpath
 
 1. Add all types of handles web elements
+
+	Using latest plugins like and mastering it and levering its ROI on automation testing
+
+		i. SelectorsHub
+		ii. Locator Labs
+
 2. Implement POM
 3. Create an e2e scenario using any website covering 5-7 flows in 1 test case
 3. Create CICD workflow for UI in GITHUB Actions for
 	i. workflow-dispatch
 	ii. pull request to main branch
+
 -------------------------------------------------------------------------------
 	
 
