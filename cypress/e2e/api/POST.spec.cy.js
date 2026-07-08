@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 
 const { faker } = require("@faker-js/faker");
 const AJV = require("ajv");
