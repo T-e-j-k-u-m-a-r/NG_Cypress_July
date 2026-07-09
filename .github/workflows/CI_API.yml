@@ -1,5 +1,5 @@
 
-name:  "CI - Automated Tests"
+name:  "CI - Automated Tests - Automated Trigger"
 
 on:
     pull_request: 
