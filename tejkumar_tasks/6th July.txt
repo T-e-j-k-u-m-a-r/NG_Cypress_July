@@ -71,10 +71,7 @@
 8th & 9th July -> TODO: In Progress
 
 
-API: 
-
-*******************************************************
-
+API: DONE
 Write a code to perform 
 
 	a. CRUD operation for this API: https://gorest.co.in/rest-console
@@ -86,12 +83,12 @@ Write a code to perform
 4. DELETE
 	
 	c. Create CICD workflows using Github Actions for
-		i. workflow-dispatch
-		ii. pull request to main branch
+		i. workflow-dispatch: Pipeline 1
+		ii. pull request to main branch: Pipeline 2
 
-UI: 
+------------------------------------------------------
 
-*******************************************************
+UI: In Progress
 
 0. Complete mastering locator stratergy
 
@@ -113,6 +110,9 @@ UI:
 
 -------------------------------------------------------------------------------
 	
+
+
+
 
 
 
