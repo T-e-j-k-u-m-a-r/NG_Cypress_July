@@ -3,10 +3,9 @@ name:  "CI - Automated Tests"
 
 on:
     workflow_dispatch: 
-     inputs:
+    #  inputs:
        
-               
-
+       
 jobs:
     "Cypress-Automation": 
 
