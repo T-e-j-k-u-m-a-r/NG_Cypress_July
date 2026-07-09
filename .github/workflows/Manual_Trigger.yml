@@ -1,4 +1,4 @@
-name: "CI - Automated Tests"
+name: "CI - Automated Tests - Manual Trigger"
 
 on:
   workflow_dispatch:
