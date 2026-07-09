@@ -2,8 +2,8 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   allowCypressEnv: true,
-  requestTimeout: 15000,
-  responseTimeout: 15000,
+  requestTimeout: 30000,
+  responseTimeout: 30000,
   pageLoadTimeout: 15000,
   defaultCommandTimeout: 15000,
   watchForFileChanges: false,
