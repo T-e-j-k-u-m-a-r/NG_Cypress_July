@@ -109,6 +109,24 @@ UI: In Progress
 	ii. pull request to main branch
 
 -------------------------------------------------------------------------------
+Performance Testing using K6: 
+
+-------------------------------------------------------------------------------
+Playwright Automation: 
+
+Note: 
+
+1. Create a new repository and get started with it. 
+2. Follow the naming convention of NG_Cypress_July
+	Example: NG_Playwright_July
+
+API: 
+
+UI: 
+
+MCP Integration along with using AI tools: 
+
+-------------------------------------------------------------------------------
 	
 
 
