@@ -1,49 +1,46 @@
-
-name:  "CI - Automated Tests"
+name: "CI - Automated Tests"
 
 on:
-    workflow_dispatch: 
-    #  inputs:
-       
-       
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Select the target environment to deploy'
+        required: true
+        type: choice
+        default: 'DEV'
+        options:
+          - QA
+          - DEV
+          - ACC
+
 jobs:
-    "Cypress-Automation": 
+  Cypress-Automation:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      # Step1: Clone the repo into Ubuntu Virtual Machine
+      - name: "Checkout Repository"
+        uses: actions/checkout@v4
 
-        runs-on: ubuntu-latest
-        steps:
-            # Step1: Clone the repo into Ubuntu Virtual Machine
-            - name: "Checkout Repository"
-              uses: actions/checkout@v4
-                  
+      # Step2: Setup node software
+      - name: "Setup Node JS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
 
-            # Step2: Setup node software
-            - name: "Setup Node JS"
-              uses: actions/setup-node@v4
-              with:
-                node-version: '20'
-                cache: 'npm'
+      # Step3: Check node version
+      - name: "Check node version"
+        run: node --version
 
-            # Step3: Check node version
-            - name: "Check node version"
-              run: node --version
-            
-            # Step4: Install npm packages
-            - name: "Install all dependencies"
-              run: npm ci
-            
-            # Step5: Verify Cypress installed version along with browsers
-            - name: "Check Cypress version"
-              run: npx cypress --version
+      # Step4: Install npm packages
+      - name: "Install all dependencies"
+        run: npm ci
 
-            # Step6: Execute all the Cypress Scripts including both UI and API
-            - name: "Run All Cypress Scripts"
-              run: npm run test:all
-              
+      # Step5: Verify Cypress installed version along with browsers
+      - name: "Check Cypress version"
+        run: npx cypress --version
 
-
-        
-
-
-
- 
- 
+      # Step6: Execute all the Cypress Scripts including both UI and API
+      - name: "Run All Cypress Scripts"
+        run: npm run test:all
